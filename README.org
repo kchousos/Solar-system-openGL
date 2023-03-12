@@ -1,0 +1,65 @@
+:LATEX_PROPERTIES:
+#+LATEX_COMPILER: xelatex
+#+LATEX_CLASS: article
+#+LATEX_CLASS_OPTIONS: [9pt, a4paper, notitlepage]
+
+#+LATEX_HEADER: \usepackage{polyglossia}
+#+LATEX_HEADER: \setmainlanguage{greek}
+#+LATEX_HEADER: \setotherlanguage{english}
+
+#+LATEX_HEADER: \usepackage{microtype}
+#+LATEX_HEADER: \usepackage{extsizes}
+
+# #+LATEX_HEADER: \usepackage{newcomputermodern}
+#+LATEX_HEADER: \setmainfont[BoldFont = {Iosevka Aile Light}, ItalicFont = {Iosevka Aile Extralight Italic}]{Iosevka Aile Extralight}
+#+LATEX_HEADER: \setmonofont{Iosevka}
+
+#+LATEX_HEADER: \usepackage{unicode-math}
+#+LATEX_HEADER: \setmathfont{Fira Math}
+
+#+LATEX_HEADER: \usepackage{biblatex}
+# #+LATEX_HEADER: \DefineBibliographyStrings{greek}{pagetotals = {σελίδες}}
+#+LATEX_HEADER: \AtEveryBibitem{\clearfield{pagetotal}}
+
+#+LATEX_HEADER: \usepackage{svg}
+
+#+LATEX_HEADER: \usepackage[margin=1.3in]{geometry}
+
+#+LATEX_HEADER: \renewcommand{\baselinestretch}{1.2}
+
+#+LATEX_HEADER: \usepackage[font={small}, labelfont={bf}]{caption}
+
+#+LATEX_HEADER: \usemintedstyle{vs}
+#+LATEX_HEADER: \setminted{frame=single, framesep=2mm}
+
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancy}
+#+LATEX_HEADER: \rhead{Κωνσταντίνος Χούσος}
+#+LATEX_HEADER: \lhead{\textit{Γραφικά Ι}}
+#+LATEX_HEADER: \chead{}
+
+#+LATEX_HEADER: \usepackage{titlesec}
+#+LATEX_HEADER: \titleformat{\section}{\large \bf \uppercase}{\thesection}{0.5em}{}{}
+:END:
+#+TITLE: Γραφικά Ι
+#+SUBTITLE: Εργασία 2022-2023
+#+AUTHOR: Κωνσταντίνος Χούσος @@latex:\\ \small{ΑΜ: 1115202000215}@@
+#+OPTIONS: num:nil toc:nil date:nil timestamp:nil
+
+Η συγκεκριμένη υλοποίηση βασίστηκε εκτενώς στα tutorials και παραδείγματα του [[http:learnopengl.com/][learnopengl]], έχοντας δανειστεί διάφορα μέρη κώδικα. Ο κώδικας βρίσκεται στο αρχείο =./src/main.cpp=, ενώ το εκτελέσιμο στο αρχείο =./bin/main=.
+
+Η εργασία εκπονήθηκε σε Linux σύστημα. Συμπεριλαμβάνονται όλα τα αρχεία κι οι βιβλιοθήκες που χρησιμοποιήθηκαν.
+
+* Δομή
+
+- Φόρτωση μοντέλων
+- Επανάληψη σχεδίασης
+  1. Σχεδίαση ήλιου και πηγής φωτός
+  2. Σχεδίαση γης
+  3. Σχεδίαση σελήνης
+
+* Έλεγχοι
+
+- WASD: έλεγχος κάμερας
+- Space: Παύση/έναρξη κίνησης
+- Escape: Κλείσιμο
